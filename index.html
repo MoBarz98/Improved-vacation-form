@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Time!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        Enter the Contest for the Vacation of a Lifetime
+    </nav>
+    <main>
+        <h2>Vacation Contest Sign-Up Form</h2>
+        <form action="results.html" method="GET"> <!-- TODO: Set Action and Method Properties -->
+            <div>
+                <legend>
+            
+                <label for="firstname">Your First Name</label>
+                <input type="text" id="firstname"required name="firstname" minlength="2" maxlength="35">
+                <label for="lastname">Your Last Name</label>
+                <input type="text" id="lastname"required name="lastname" minlength="2" maxlength="35"
+            </div>
+            
+                <label for="Your Age">Age</label>
+            <input type="number" id="Age" name="age" min="21" max="120">
+            <h5>Must be the age of 21 or older to contest</h5>
+        
+        
+            <fieldset>
+                <legend><em>Your Contact Info</em></legend>
+            <lable for="email">Your Email Address</lable>
+                <input type="text" id="email" required name="email">
+</legend>
+            
+            <!-- Todo: Email Input -->
+            <!-- Todo: Street Address Input -->
+            <label for="Your Street Address"> Your Street Address</label>
+            <input type="text" id=""
+            <label for= "Your City">Your City</label>
+            <input type="text" id=""
+            <label for="Your State">Choose your state from this list</label>
+            <input list="state-list" id="State" name="state" />
+
+            <datalist id="state-list">
+            <option value="NC"></option>
+            <option value="NY"></option>
+            <option value="VA"></option>
+            <option value="KY"></option>
+            
+             </datalist>
+            
+            <label for="Your ZipCode">Your ZipCode</label>
+            <input type="text" id="ZipCode" [0-9]{5} title value="5-digit US ZIP Code"
+
+
+            <!-- Todo: City, State, and Zip Inputs -->
+</fieldset>
+<fieldset>
+<legend><em>Your Prefrences</em></legend>
+<h3>Choose Your Location</h3>
+<div> 
+    <input type="radio" id="Aruba" name="Location" value="Aruba">
+    <label for="Aruba">Aruba</label>
+</div>
+<div>
+    <input type="radio" id="Japan" name="Location" value="Japan">
+    <label for="Japan">Japan</label>
+</div>
+<div>
+    <input type="radio" id="New Zeland" name="Location" value="New Zeland" checked>
+    <label for="New Zeland">New Zeland</label>
+  </div>
+</fieldset>
+<legend>Preferred Color</legend>
+<input type="color" id="color" name="color" value="color">
+
+<input type="checkbox" id="Hot Tub" name="Extras" value="Hot Tub">
+<label for="Hot Tub">Hot Tub</label>
+<input type="checkbox" id="Sauna Access" name="Extras" value="Sauna Access">
+<label for="Sauna Access">Sauna Access</label>
+<input type="checkbox" id="Ocean Front" name="Extras" value="Ocean Front">
+<label for="Ocean Front">Ocean Front</label>
+<input type="submit" id="Enter the Contest" name="Enter the Contest" value="Enter the Contest">
+<label for="Enter the Contest">Enter the Contest</label>    
+
+
+            <!-- TODO: Second fieldset -->
+            <!-- TODO: Radio buttons for selecting preferred destination -->
+            <!-- TODO: Color input for selecting favorite color -->
+            <!-- TODO: Checkboxes for selecting extra add-ons -->
+            
+            <!-- TODO: Submit Button -->
+        </form>
+    </main>
+    <footer>
+        <h2>Resource Attributions</h2>
+        <p>All images provided for free use via <a href="https://unsplash.com/">Unsplash.com</a> whose generous <a href="https://unsplash.com/license">license details can be found here</a>.</p>
+    </footer>
+</body>
+</html>
